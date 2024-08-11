@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Home | Viola</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+  </head>
+  <body x-data="{ openMenu: false, openDropdown: false }">
+    <div id="app">
+        <nav class="navbar is-dark is-transparent" style="top: 0;  position: absolute; z-index: 49;  width: 100%; background-color: transparent;">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item is-size-4 has-text-weight-boldd is-uppercase" href="">
+                        VIOLATRAVELANDTOURS
+                    </a>
+                    <a @click="openMenu = ! openMenu" class="navbar-burger" role="button"
+                        :class="{ 'is-active': openMenu }">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+
+
+                <div class="navbar-menu has-text-centered" :class="{ 'is-active': openMenu }">
+                    <!-- Left Side Of Navbar -->
+                    <div class="navbar-start">
+
+                    </div>
+
+                    <!-- Right Side Of Navbar -->
+                    <div class="navbar-end">
+                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./index.html">Home</a>
+                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./about.html">About</a>
+                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./services.html">Services</a>
+                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./tours.html">Tours</a>
+                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./destinations.html">Destinations</a>
+                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+			<section class="hero has-text-centered is-fullheight">
+				<div class="bg-image"
+					style="position: absolute; top: 0; width: 100%; height: 100%;  background-position: center; background-size: cover;background-attachment: fixed;background-image : url(img/beach-801875_1920.jpg);">
+					<span class="overlayer"
+						style="  bottom: 0;
+		  left: 0;
+		  position: absolute;
+		  right: 0;
+		  top: 0;
+		  background-color: rgb(0, 0, 0,0.45) !important;"></span>
+				</div>
+				<div class="hero-body">
+					<div class="container is-fluid">
+						<div class="columns is-centered">
+							<div class="column">
+								<h1 class="hero-title title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile has-text-white py-4"
+									style="font-weight: 800">
+									Viola Travel and Tours</h1>
+								<h2 class="subtitle is-size-4-desktop has-text-white mb-6">VISA | FLIGHTS | TOURS | TRAVEL AGENCY
+								</h2>
+								<div class="buttons is-centered are-medium">
+									<a class="button is-primary" href="./tours.html">Book a Tour</a>
+									<a class="button is-white" href="./about.html">About Us</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+		
+		
+			<section class="section is-medium has-background-white-bis" id="service">
+				<div class="container" style="max-width: 960px">
+					<h1 class="title is-space is-size-3-desktop is-size-4-mobile has-text-centered" style="font-weight: 800">Our
+						Services</h1>
+					<h2 class="subtitle is-size-4-desktop mx-auto has-text-centered mb-6">Lorem ipsum dolor sit amet consectetur
+						adipisicing elit.</h2>
+					<div class="columns has-text-centered is-multiline level">
+						<div class="column is-12-touch is-half-desktop is-3-widescreen level-item">
+							<div class="box px-4 has-background-primary">
+								<span class="icon is-large has-background-primary-light mb-2" style="border-radius: 50%">
+									<i class="fas fa-globe fa-lg has-text-primary"></i>
+								</span>
+								<h1 class="title is-size-4 mb-2 has-text-white">Visa Processing</h1>
+								<p class="has-text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							</div>
+						</div>
+						<div class="column is-12-touch is-half-desktop is-3-widescreen level-item">
+							<div class="box px-4">
+								<span class="icon is-large has-background-primary-light mb-2" style="border-radius: 50%">
+									<i class="fas fa-globe fa-lg has-text-primary"></i>
+								</span>
+								<h1 class="title is-size-4 mb-2">Hotel Booking</h1>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							</div>
+						</div>
+						<div class="column is-12-touch is-half-desktop is-3-widescreen level-item">
+							<div class="box px-4">
+								<span class="icon is-large has-background-primary-light mb-2" style="border-radius: 50%">
+									<i class="fas fa-globe fa-lg has-text-primary"></i>
+								</span>
+								<h1 class="title is-size-4 mb-2">Ticket Booking</h1>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							</div>
+						</div>
+						<div class="column is-12-touch is-half-desktop is-3-widescreen level-item">
+							<div class="box px-4">
+								<span class="icon is-large has-background-primary-light mb-2" style="border-radius: 50%">
+									<i class="fas fa-globe fa-lg has-text-primary"></i>
+								</span>
+								<h1 class="title is-size-4 mb-2">Tour Plans</h1>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="columns is-vcentered mt-6">
+						<div class="column is-6">
+							<div class="image is-4by3 mx-auto">
+								<img class="is-rounded" src="img/beach-801875_1920.jpg" alt="">
+							</div>
+						</div>
+						<div class="column is-5 is-offset-1">
+							<p class="has-text-weight-bold mb-2">ABOUT US</p>
+							<h3 class="title is-size-4 has-text-primary" style="font-weight: 800;">Our Company is Here to Book your
+								Tour Seemlessly</h3>
+							<p class="subtitlee is-size-55 mb-6">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+								Quisquam nemo sunt dolorem in eaque quo ducimus possimus nihil vitae, quia dolore ut eum voluptatum
+								provident fugit alias quos aut culpa.</p>
+							<div class="buttons">
+								<button class="button is-primary is-outlinedd">Read More</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+		
+			
+			<section class="section is-medium" id="service">
+				<div class="container" style="max-width: 960px">
+					<div class="columns">
+						<div class="column is-5">
+							<p class="has-text-weight-bold mb-2 is-uppercase">Popular Destinations</p>
+							<h3 class="title is-size-4 has-text-primary" style="font-weight: 800;">Check Out Our Most Popular
+								Destination
+								& Trips</h3>
+						</div>
+					</div>
+					<div class="columns is-multiline level has-text-centered is-centered">
+						<div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="img/beach-801875_1920.jpg" alt="">
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-size-5 mb-2">England</h1>
+									
+								</div>
+							</div>
+						</div>
+						<div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="img/beach-801875_1920.jpg" alt="">
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-size-5 mb-2">Germany</h1>
+									
+								</div>
+							</div>
+						</div>
+						<div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="img/beach-801875_1920.jpg" alt="">
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-size-5 mb-2">France</h1>
+								
+								</div>
+							</div>
+						</div>
+						<div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="img/beach-801875_1920.jpg" alt="">
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-size-5 mb-2">Spain</h1>
+								</div>
+							</div>
+						</div>
+						<div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="img/beach-801875_1920.jpg" alt="">
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-size-5 mb-2">Italy</h1>
+								</div>
+							</div>
+						</div>
+						<div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="img/beach-801875_1920.jpg" alt="">
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-size-5 mb-2">Cananda</h1>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="columns is-centered has-text-centered mt-6">
+						<div class="column">
+							<a class="button is-primary is-medium has-text-weight-normal" href="">
+								<span class="icon"><i class="fas fa-globe"></i></span>
+								<span>View More Destinations</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+			<section class="section has-background-white-bis is-medium">
+				<div class="container has-text-centered" style="max-width: 960px">
+					<h1 class="title is-size-3-desktop is-size-4-mobile" style="font-weight: 800">Testimonials
+					</h1>
+					<h2 class="subtitle is-size-4-desktop mx-auto mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+					</h2>
+					<div class="columns is-vcentered is-multiline">
+		
+						<div class="column is-6 has-text-centered">
+							<div class="box">
+								<div class="level is-mobile">
+									<div class="level-left">
+										<div class="level-item">
+											<figure class="image is-48x48">
+												<img class="is-rounded" src="./img/avatar.jpg">
+											</figure>
+										</div>
+										<div>
+											<p class="title has-text-left is-size-5 is-marginless">
+												Ricky Smith
+											</p>
+											<small class="has-text-primary">
+												Front-end Developer
+											</small>
+										</div>
+									</div>
+									<div class="level-right">
+										<div>
+											<span class="icon is-large mb-2" style="border-radius: 50%">
+												<i class="fas fa-quote-right is-size-1 has-text-primary"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+								<p class="is-size-6 has-text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Quisquam nemo
+									sunt dolorem in eaque quo ducimus possimus nihil vitae, quia dolore ut eum voluptatum provident
+									fugit alias quos aut culpa.</p>
+							</div>
+						</div>
+		
+						<div class="column is-6 has-text-centered">
+							<div class="box">
+								<div class="level is-mobile">
+									<div class="level-left">
+										<div class="level-item">
+											<figure class="image is-48x48">
+												<img class="is-rounded" src="./img/avatar.jpg">
+											</figure>
+										</div>
+										<div>
+											<p class="title has-text-left is-size-5 is-marginless">
+												Ricky Smith
+											</p>
+											<small class="has-text-primary">
+												Front-end Developer
+											</small>
+										</div>
+									</div>
+									<div class="level-right">
+										<div>
+											<span class="icon is-large mb-2" style="border-radius: 50%">
+												<i class="fas fa-quote-right is-size-1 has-text-primary"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+								<p class="is-size-6 has-text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Quisquam nemo
+									sunt dolorem in eaque quo ducimus possimus nihil vitae, quia dolore ut eum voluptatum provident
+									fugit alias quos aut culpa.</p>
+							</div>
+						</div>
+		
+						<div class="column is-6 has-text-centered">
+							<div class="box">
+								<div class="level is-mobile">
+									<div class="level-left">
+										<div class="level-item">
+											<figure class="image is-48x48">
+												<img class="is-rounded" src="./img/avatar.jpg">
+											</figure>
+										</div>
+										<div>
+											<p class="title has-text-left is-size-5 is-marginless">
+												Ricky Smith
+											</p>
+											<small class="has-text-primary">
+												Front-end Developer
+											</small>
+										</div>
+									</div>
+									<div class="level-right">
+										<div>
+											<span class="icon is-large mb-2" style="border-radius: 50%">
+												<i class="fas fa-quote-right is-size-1 has-text-primary"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+								<p class="is-size-6 has-text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Quisquam nemo
+									sunt dolorem in eaque quo ducimus possimus nihil vitae, quia dolore ut eum voluptatum provident
+									fugit alias quos aut culpa.</p>
+							</div>
+						</div>
+		
+						<div class="column is-6 has-text-centered">
+							<div class="box">
+								<div class="level is-mobile">
+									<div class="level-left">
+										<div class="level-item">
+											<figure class="image is-48x48">
+												<img class="is-rounded" src="./img/avatar.jpg">
+											</figure>
+										</div>
+										<div>
+											<p class="title has-text-left is-size-5 is-marginless">
+												Ricky Smith
+											</p>
+											<small class="has-text-primary">
+												Front-end Developer
+											</small>
+										</div>
+									</div>
+									<div class="level-right">
+										<div>
+											<span class="icon is-large mb-2" style="border-radius: 50%">
+												<i class="fas fa-quote-right is-size-1 has-text-primary"></i>
+											</span>
+										</div>
+									</div>
+								</div>
+								<p class="is-size-6 has-text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+									Quisquam nemo
+									sunt dolorem in eaque quo ducimus possimus nihil vitae, quia dolore ut eum voluptatum provident
+									fugit alias quos aut culpa.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		
+		
+		
+			<section class="section is-medium" id="service">
+				<div class="container" style="max-width: 960px">
+					<div class="columns has-text-centered is-centered">
+						<div class="column is-8">
+							<h1 class="title is-size-3-desktop is-size-4-mobile" style="font-weight: 800">On Demand Tours
+							</h1>
+							<h2 class="subtitle is-size-4-desktop mx-auto mb-6">Discover on-demand tours made for you
+							</h2>
+						</div>
+					</div>
+					<div class="columns is-multiline level has-text-left is-centered">
+						<div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="img/beach-801875_1920.jpg" alt="">
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-size-5 mb-2">Tower of france</h1>
+									<p>Explore the Tower of france</p>
+								</div>
+							</div>
+						</div>
+						<div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="img/beach-801875_1920.jpg" alt="">
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-size-5 mb-2">Tower of france</h1>
+									<p>Explore the Tower of france</p>
+								</div>
+							</div>
+						</div>
+						<div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="img/beach-801875_1920.jpg" alt="">
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-size-5 mb-2">Tower of france</h1>
+									<p>Explore the Tower of france</p>
+								</div>
+							</div>
+						</div>
+						<div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="img/beach-801875_1920.jpg" alt="">
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-size-5 mb-2">Tower of france</h1>
+									<p>Explore the Tower of france</p>
+								</div>
+							</div>
+						</div>
+						<div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="img/beach-801875_1920.jpg" alt="">
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-size-5 mb-2">Tower of france</h1>
+									<p>Explore the Tower of france</p>
+								</div>
+							</div>
+						</div>
+						<div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
+							<div class="card">
+								<div class="card-image">
+									<figure class="image is-4by3">
+										<img src="img/beach-801875_1920.jpg" alt="">
+									</figure>
+								</div>
+								<div class="card-content">
+									<h1 class="title is-size-5 mb-2">Tower of france</h1>
+									<p>Explore the Tower of france</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="columns is-centered has-text-centered mt-6">
+						<div class="column">
+							<a class="button is-primary is-medium has-text-weight-normal" href="">
+								<span class="icon"><i class="fas fa-globe"></i></span>
+								<span>View More Tours</span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+        </main>
+        <footer class="footer has-background-black-bis has-text-white pt-6 pb-6">
+            <div class="container is-narrow">
+                <div class="level is-mobilee">
+                    <div class="level-left">
+                      <h1 class="title is-4">
+                        <strong class="is-block has-text-white">Have any questions?</strong>
+                        <span class="has-text-grey-lighter is-size-6">Our support team answers your questions</span>
+                      </h1>
+                    </div>
+                    <div class="level-right is-hidden-mobilee">
+                      <div class="buttons">
+                        <button class="button is-primary">Contact Us</button>
+                        <button class="button is-white is-outlined">Chat with us</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="columns is-multiline is-mobile mt-6">
+                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                        <h4 class="title is-size-5 has-text-light">ViolaTraveandTours ©
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>
+                        </h4>
+                        <p>+2348162887599<br>Chilliwack, ViolaTraveandTours@gmail.com</p>
+                        <p>Port Harcourt, Rivers State</p>
+                        <p class="has-text-white">Coded with <span class="icon"><i class="fas fa-heart has-text-danger"></i></span> by Patutechz</p>
+                    </div>
+                    <div class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop">
+                        <h4 class="title is-size-5 has-text-light">Company</h4>
+                        <a class="is-family-sans-serif has-text-weight-medium has-text-white"
+                            href="https://www.facebook.com/WF-Design-Build-424692530942586/" target="_blank">About Us</a>
+                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white"
+                            href="https://instagram.com/wfdesignbuild" target="_blank">Fetures</a>
+                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white"
+                            href="https://linkedin.com/in/warren-friesen-55a75865" target="_blank">Reviews</a>
+                    </div>
+
+                    <div class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop">
+                        <h4 class="title is-size-5 has-text-light">Services</h4>
+                        <a class="is-family-sans-serif has-text-weight-medium has-text-white"
+                            href="https://www.facebook.com/WF-Design-Build-424692530942586/" target="_blank">Flight
+                            Booking</a>
+                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white"
+                            href="https://instagram.com/wfdesignbuild" target="_blank">Make Tour Plan</a>
+                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white"
+                            href="https://linkedin.com/in/warren-friesen-55a75865" target="_blank">Hotel Booking</a>
+                    </div>
+                    <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                        <h4 class="title is-size-5 has-text-light">Follow Us</h4>
+                        <div class="buttons mt-4">
+                            <a href="https://www.facebook.com/patrick.uche.543/" class="button is-light is-outlined"
+                                style="border-radius : 9999px">
+                                <span class="icon"><i class="fab fa-facebook"></i></span>
+                            </a>
+                            <a href="https://github.com/patutechz" class="button is-light is-outlined"
+                                style="border-radius : 9999px">
+                                <span class="icon"><i class="fab fa-github"></i></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/okpunor-patrick-b-sc-155467186/"
+                                class="button is-light is-outlined" style="border-radius : 9999px">
+                                <span class="icon"><i class="fab fa-linkedin"></i></span>
+                            </a>
+                            <a href="https://www.instagram.com/patutechz/" class="button is-light is-outlined"
+                                style="border-radius : 9999px">
+                                <span class="icon"><i class="fab fa-instagram"></i></span>
+                            </a>
+                            <a href="https://x.com/Uche_ricky" class="button is-light is-outlined"
+                                style="border-radius : 9999px">
+                                <span class="icon"><i class="fab fa-twitter"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a href="" class="link-button has-background-primary">
+        <i class="fab fa-whatsapp is-size-3"></i>
+      </a>
+    <script type="text/javascript" src="lib/alpine.js"></script>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Services | Viola</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+  </head>
+  <body x-data="{ openMenu: false, openDropdown: false }">
+    <div id="app">
+        <nav class="navbar is-primary is-transparent">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item is-size-4 has-text-weight-boldd is-uppercase" href="">
+                        VIOLATRAVELANDTOURS
+                    </a>
+                    <a @click="openMenu = ! openMenu" class="navbar-burger" role="button"
+                        :class="{ 'is-active': openMenu }">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+
+
+                <div class="navbar-menu has-text-centered" :class="{ 'is-active': openMenu }">
+                    <!-- Left Side Of Navbar -->
+                    <div class="navbar-start">
+
+                    </div>
+
+                    <!-- Right Side Of Navbar -->
+                    <div class="navbar-end">
+                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./index.html">Home</a>
+                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./about.html">About</a>
+                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./services.html">Services</a>
+                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./tours.html">Tours</a>
+                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./destinations.html">Destinations</a>
+                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./contact.html">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <main>
+            <section class="hero has-text-centered is-vcentered is-halfheight is-primary">
+                <div class="hero-body">
+                    <div class="container is-fluid">
+                        <div class="columns is-centered">
+                            <div class="column">
+                                <h1 class="hero-title title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile py-4"
+                                    style="font-weight: 800">
+                                    England</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section">
+                <div class="container" style="max-width: 960px">
+                    <h1 class="title is-size-3-desktop is-size-4-mobile" style="font-weight: 800">England</h1>
+            
+                    <h2 class="subtitle is-size-4-desktop mx-auto mb-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, quisquam nemo quod, consectetur animi, molestiae voluptatem dolorum saepe dignissimos deserunt fugiat odit sit iure repellendus placeat dicta rem velit corporis?</h2>
+            
+            
+            
+                    <h1 class="title is-size-3-desktop is-size-4-mobile" style="font-weight: 800">Photo Gallery</h1>
+                    <div class="columns is-multiline level has-text-left is-centered">
+                        <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="img/beach-801875_1920.jpg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="img/beach-801875_1920.jpg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="img/beach-801875_1920.jpg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="img/beach-801875_1920.jpg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="img/beach-801875_1920.jpg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item">
+                            <div class="card">
+                                <div class="card-image">
+                                    <figure class="image is-4by3">
+                                        <img src="img/beach-801875_1920.jpg" alt="">
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer has-background-black-bis has-text-white pt-6 pb-6">
+            <div class="container is-narrow">
+                <div class="level is-mobilee">
+                    <div class="level-left">
+                      <h1 class="title is-4">
+                        <strong class="is-block has-text-white">Have any questions?</strong>
+                        <span class="has-text-grey-lighter is-size-6">Our support team answers your questions</span>
+                      </h1>
+                    </div>
+                    <div class="level-right is-hidden-mobilee">
+                      <div class="buttons">
+                        <button class="button is-primary">Contact Us</button>
+                        <button class="button is-white is-outlined">Chat with us</button>
+                      </div>
+                    </div>
+                  </div>
+                <div class="columns is-multiline is-mobile mt-6">
+                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
+                        <h4 class="title is-size-5 has-text-light">ViolaTraveandTours ©
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script>
+                        </h4>
+                        <p>+2348162887599<br>Chilliwack, ViolaTraveandTours@gmail.com</p>
+                        <p>Port Harcourt, Rivers State</p>
+                        <p class="has-text-white">Coded with <span class="icon"><i class="fas fa-heart has-text-danger"></i></span> by Patutechz</p>
+                    </div>
+                    <div class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop">
+                        <h4 class="title is-size-5 has-text-light">Company</h4>
+                        <a class="is-family-sans-serif has-text-weight-medium has-text-white"
+                            href="https://www.facebook.com/WF-Design-Build-424692530942586/" target="_blank">About Us</a>
+                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white"
+                            href="https://instagram.com/wfdesignbuild" target="_blank">Fetures</a>
+                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white"
+                            href="https://linkedin.com/in/warren-friesen-55a75865" target="_blank">Reviews</a>
+                    </div>
+
+                    <div class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop">
+                        <h4 class="title is-size-5 has-text-light">Services</h4>
+                        <a class="is-family-sans-serif has-text-weight-medium has-text-white"
+                            href="https://www.facebook.com/WF-Design-Build-424692530942586/" target="_blank">Flight
+                            Booking</a>
+                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white"
+                            href="https://instagram.com/wfdesignbuild" target="_blank">Make Tour Plan</a>
+                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white"
+                            href="https://linkedin.com/in/warren-friesen-55a75865" target="_blank">Hotel Booking</a>
+                    </div>
+                    <div class="column is-12-mobile is-6-tablet is-3-desktop">
+                        <h4 class="title is-size-5 has-text-light">Follow Us</h4>
+                        <div class="buttons mt-4">
+                            <a href="https://www.facebook.com/patrick.uche.543/" class="button is-light is-outlined"
+                                style="border-radius : 9999px">
+                                <span class="icon"><i class="fab fa-facebook"></i></span>
+                            </a>
+                            <a href="https://github.com/patutechz" class="button is-light is-outlined"
+                                style="border-radius : 9999px">
+                                <span class="icon"><i class="fab fa-github"></i></span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/okpunor-patrick-b-sc-155467186/"
+                                class="button is-light is-outlined" style="border-radius : 9999px">
+                                <span class="icon"><i class="fab fa-linkedin"></i></span>
+                            </a>
+                            <a href="https://www.instagram.com/patutechz/" class="button is-light is-outlined"
+                                style="border-radius : 9999px">
+                                <span class="icon"><i class="fab fa-instagram"></i></span>
+                            </a>
+                            <a href="https://x.com/Uche_ricky" class="button is-light is-outlined"
+                                style="border-radius : 9999px">
+                                <span class="icon"><i class="fab fa-twitter"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <a href="" class="link-button has-background-primary">
+        <i class="fab fa-whatsapp is-size-3"></i>
+      </a>
+    <script type="text/javascript" src="lib/alpine.js"></script>
+  </body>
+</html>
