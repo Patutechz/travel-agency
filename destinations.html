@@ -1,260 +1,506 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Services | Viola</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Destinations | Viola</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css" />
   </head>
   <body x-data="{ openMenu: false, openDropdown: false }">
     <div id="app">
-        <nav class="navbar is-primary is-transparent">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a class="navbar-item is-size-5 has-text-weight-boldd is-uppercasee" href="./index.html">
-                        <img class="is-rounded mr-2" src="img/viola-white.png" alt="violatravelandtours" height="48">
-                        ViolaTravelandTours
-                    </a>
-                    <a @click="openMenu = ! openMenu" class="navbar-burger" role="button"
-                        :class="{ 'is-active': openMenu }">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
-                </div>
+      <nav class="navbar is-primary is-transparent">
+        <div class="container">
+          <div class="navbar-brand">
+            <a
+              class="navbar-item is-size-5 has-text-weight-boldd is-uppercasee"
+              href="./index.html"
+            >
+              <img
+                class="is-rounded mr-2"
+                src="img/viola-white.png"
+                alt="violatravelandtours"
+                height="48"
+              />
+              <!-- ViolaTravelandTours -->
+            </a>
+            <a
+              @click="openMenu = ! openMenu"
+              class="navbar-burger"
+              role="button"
+              :class="{ 'is-active': openMenu }"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
 
+          <div
+            class="navbar-menu has-text-centered"
+            :class="{ 'is-active': openMenu }"
+          >
+            <!-- Left Side Of Navbar -->
+            <div class="navbar-start"></div>
 
-                <div class="navbar-menu has-text-centered" :class="{ 'is-active': openMenu }">
-                    <!-- Left Side Of Navbar -->
-                    <div class="navbar-start">
-
-                    </div>
-
-                    <!-- Right Side Of Navbar -->
-                    <div class="navbar-end">
-                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./index.html">Home</a>
-                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./about.html">About</a>
-                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./services.html">Services</a>
-                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./tours.html">Tours</a>
-                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./destinations.html">Destinations</a>
-                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./contact.html">Contact</a>
-                    </div>
-                </div>
+            <!-- Right Side Of Navbar -->
+            <div class="navbar-end">
+              <a
+                class="navbar-item is-size-5 has-text-weight-mediumm"
+                href="./index.html"
+                >Home</a
+              >
+              <a
+                class="navbar-item is-size-5 has-text-weight-mediumm"
+                href="./about.html"
+                >About</a
+              >
+              <a
+                class="navbar-item is-size-5 has-text-weight-mediumm"
+                href="./services.html"
+                >Services</a
+              >
+              <a
+                class="navbar-item is-size-5 has-text-weight-mediumm"
+                href="./tours.html"
+                >Tours</a
+              >
+              <a
+                class="navbar-item is-size-5 has-text-weight-mediumm"
+                href="./destinations.html"
+                >Destinations</a
+              >
+              <a
+                class="navbar-item is-size-5 has-text-weight-mediumm"
+                href="./contact.html"
+                >Contact</a
+              >
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
 
-        <main>
-            <section class="hero has-text-centered is-vcentered is-halfheight is-primary">
-                <div class="hero-body">
-                    <div class="container is-fluid">
-                        <div class="columns is-centered">
-                            <div class="column">
-                        <h1 class="hero-title title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile py-4"
-                            style="font-weight: 800">
-                            Explore the World’s Most Visited Destinations</h1>
-                            <h2 class="subtitle is-size-4-desktop mx-auto mb-6">From bustling cities to serene landscapes, discover the iconic spots that draw
-                                travelers from all over the globe.
-                            </h2>
-                            </div>
-                        </div>
-                    </div>
+      <main>
+        <section
+          class="hero has-text-centered is-vcentered is-halfheight is-primary"
+        >
+          <div class="hero-body">
+            <div class="container is-fluid">
+              <div class="columns is-centered">
+                <div class="column">
+                  <h1
+                    class="hero-title title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile py-4"
+                    style="font-weight: 800"
+                  >
+                    Explore the World’s Most Visited Destinations
+                  </h1>
+                  <h2 class="subtitle is-size-4-desktop mx-auto mb-6">
+                    From bustling cities to serene landscapes, discover the
+                    iconic spots that draw travelers from all over the globe.
+                  </h2>
                 </div>
-            </section>
-            <section class="section">
-                <div class="container" style="max-width: 960px">
-                    <div class="columns is-multiline level">
-                            <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <figure class="image is-4by3">
-                                            <img src="img/beach-801875_1920.jpg" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="card-content">
-                                        <h1 class="title is-size-5 mb-4">England</h1>
-                                        <a href="./destination-details.html"
-                                            class="button is-fullwidthh is-primary is-outlined">View Details</a>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <figure class="image is-4by3">
-                                            <img src="img/beach-801875_1920.jpg" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="card-content">
-                                        <h1 class="title is-size-5 mb-4">England</h1>
-                                        <a href="./destination-details.html"
-                                            class="button is-fullwidthh is-primary is-outlined">View Details</a>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <figure class="image is-4by3">
-                                            <img src="img/beach-801875_1920.jpg" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="card-content">
-                                        <h1 class="title is-size-5 mb-4">England</h1>
-                                        <a href="./destination-details.html"
-                                            class="button is-fullwidthh is-primary is-outlined">View Details</a>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <figure class="image is-4by3">
-                                            <img src="img/beach-801875_1920.jpg" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="card-content">
-                                        <h1 class="title is-size-5 mb-4">England</h1>
-                                        <a href="./destination-details.html"
-                                            class="button is-fullwidthh is-primary is-outlined">View Details</a>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <figure class="image is-4by3">
-                                            <img src="img/beach-801875_1920.jpg" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="card-content">
-                                        <h1 class="title is-size-5 mb-4">England</h1>
-                                        <a href="./destination-details.html"
-                                            class="button is-fullwidthh is-primary is-outlined">View Details</a>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <figure class="image is-4by3">
-                                            <img src="img/beach-801875_1920.jpg" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="card-content">
-                                        <h1 class="title is-size-5 mb-4">England</h1>
-                                        <a href="./destination-details.html"
-                                            class="button is-fullwidthh is-primary is-outlined">View Details</a>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow">
-                                <div class="card">
-                                    <div class="card-image">
-                                        <figure class="image is-4by3">
-                                            <img src="img/beach-801875_1920.jpg" alt="">
-                                        </figure>
-                                    </div>
-                                    <div class="card-content">
-                                        <h1 class="title is-size-5 mb-4">England</h1>
-                                        <a href="./destination-details.html"
-                                            class="button is-fullwidthh is-primary is-outlined">View Details</a>
-                                    
-                                    </div>
-                                </div>
-                            </div>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer class="footer has-background-black-ter has-text-white pt-6 pb-6">
-            <div class="container is-narrow">
-                <div class="level is-mobilee">
-                    <div class="level-left">
-                        <h1 class="title is-4">
-                            <strong class="is-block has-text-white">Got Questions?</strong>
-                            <span class="has-text-grey-lighter is-size-6">Our support team is here to guide you
-                            </span>
-                        </h1>
-                    </div>
-                    <div class="level-right is-hidden-mobilee">
-                        <div class="buttons">
-                            <a href="./contact.html" class="button is-primary">Contact Us</a>
-                            <a href="https://bit.ly/violatravelsandtours" class="button is-white is-outlined">Chat with
-                                us</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="columns is-multiline is-mobile mt-6">
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <h4 class="title is-size-5 has-text-light">ViolaTravelandTours ©
-                            <script>
-                                document.write(new Date().getFullYear())
-                            </script>
-                        </h4>
-                        <p>+2349035150573<br>info@ViolaTravelandTours.com</p>
-                        <p>Port Harcourt, Rivers State</p>
-                        <p class="has-text-white is-hidden">Coded with <span class="icon"><i
-                                    class="fas fa-heart has-text-danger"></i></span> by Patutechz</p>
-                    </div>
-                    <div class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop">
-                        <h4 class="title is-size-5 has-text-light">Quick Links</h4>
-                        <a class="is-family-sans-serif has-text-weight-medium has-text-white"
-                            href="./about.html">About Us</a>
-                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white"
-                            href="./services.html">Services</a>
-                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white"
-                            href="./tours.html">Tours</a>
-                    </div>
-
-                    <div class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop is-hidden">
-                        <h4 class="title is-size-5 has-text-light">Services</h4>
-                        <a class="is-family-sans-serif has-text-weight-medium has-text-white" href="#">Flight
-                            Booking</a>
-                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white" href="#">Make
-                            Tour Plan</a>
-                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white" href="#">Hotel
-                            Booking</a>
-                    </div>
-                    <div class="column is-12-mobile is-6-tablet is-3-desktop">
-                        <h4 class="title is-size-5 has-text-light">Follow Us</h4>
-                        <div class="buttons mt-4">
-                            <a href="https://www.facebook.com/profile.php?id=61552564592814&mibextid=LQQJ4d"
-                                class="button is-light is-outlined" style="border-radius : 9999px">
-                                <span class="icon"><i class="fab fa-facebook"></i></span>
-                            </a>
-                            <a href="https://www.instagram.com/violatravelandtours" class="button is-light is-outlined"
-                                style="border-radius : 9999px">
-                                <span class="icon"><i class="fab fa-instagram"></i></span>
-                            </a>
-                            <a href="https://bit.ly/violatravelsandtours" class="button is-light is-outlined"
-                                style="border-radius : 9999px">
-                                <span class="icon"><i class="fab fa-whatsapp"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-        </footer>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container" style="max-width: 960px">
+            <div class="columns is-centered is-multiline level">
+              <div
+                class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 mb-2">China</h1>
+                    <p>
+                      Experience the grandeur of the Great Wall, the buzzing
+                      energy of Shanghai, and the serenity of ancient temples. A
+                      land where tradition and modernity collide beautifully!
+                    </p>
+                    <a
+                      href="./destination-details.html"
+                      class="button is-fullwidthh is-primary is-outlined mt-2"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 mb-2">Egypt</h1>
+                    <p>
+                      Witness the timeless pyramids of Giza, sail the Nile like
+                      royalty, and explore bustling markets. A journey into
+                      ancient wonders awaits.
+                    </p>
+                    <a
+                      href="./destination-details.html"
+                      class="button is-fullwidthh is-primary is-outlined mt-2"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 mb-2">Kenya</h1>
+                    <p>
+                      Immerse yourself in the ultimate safari adventure, witness
+                      the Great Migration, and relax on the pristine beaches of
+                      Diani. Nature in its wildest form!
+                    </p>
+                    <a
+                      href="./destination-details.html"
+                      class="button is-fullwidthh is-primary is-outlined mt-2"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 mb-2">Morocco</h1>
+                    <p>
+                      Wander through vibrant souks, marvel at the intricate
+                      beauty of Marrakech, and savor the spices of Moroccan
+                      cuisine. An exotic escape like no other.
+                    </p>
+                    <a
+                      href="./destination-details.html"
+                      class="button is-fullwidthh is-primary is-outlined mt-2"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 mb-2">Schengen Countries</h1>
+                    <p>
+                      Hop from Paris' Eiffel Tower to Italy's canals in Venice,
+                      all on one unforgettable Eurotrip. A blend of history,
+                      culture, and romance at every turn.
+                    </p>
+                    <a
+                      href="./destination-details.html"
+                      class="button is-fullwidthh is-primary is-outlined mt-2"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 mb-2">South Africa</h1>
+                    <p>
+                      Explore Cape Town's iconic Table Mountain, sip on
+                      world-class wines, and go on thrilling safaris in Kruger
+                      National Park. Adventure and relaxation in one!
+                    </p>
+                    <a
+                      href="./destination-details.html"
+                      class="button is-fullwidthh is-primary is-outlined mt-2"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 mb-2">Tanzania</h1>
+                    <p>
+                      Climb Africa's highest peak, Mount Kilimanjaro, roam the
+                      wildlife-rich Serengeti, and unwind on Zanzibar's idyllic
+                      beaches. Nature and culture in perfect harmony.
+                    </p>
+                    <a
+                      href="./destination-details.html"
+                      class="button is-fullwidthh is-primary is-outlined mt-2"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 mb-2">Uganda</h1>
+                    <p>
+                      Track majestic mountain gorillas, marvel at the source of
+                      the Nile, and enjoy the lush beauty of the Pearl of
+                      Africa. Pure adventure!
+                    </p>
+                    <a
+                      href="./destination-details.html"
+                      class="button is-fullwidthh is-primary is-outlined mt-2"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 mb-2">UK</h1>
+                    <p>
+                      Stroll the historic streets of London, explore the
+                      Scottish Highlands, and soak in the charm of the
+                      countryside. Where history and modernity meet.
+                    </p>
+                    <a
+                      href="./destination-details.html"
+                      class="button is-fullwidthh is-primary is-outlined mt-2"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 mb-2">US</h1>
+                    <p>
+                      From the skyscrapers of New York to the beaches of
+                      California, explore the diversity, culture, and iconic
+                      landmarks of the Land of Opportunity.
+                    </p>
+                    <a
+                      href="./destination-details.html"
+                      class="button is-fullwidthh is-primary is-outlined mt-2"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 mb-2">Qatar</h1>
+                    <p>
+                      Discover the modern marvels of Doha, shop in dazzling
+                      souks, and revel in the desert's serene beauty. A blend of
+                      tradition and luxury.
+                    </p>
+                    <a
+                      href="./destination-details.html"
+                      class="button is-fullwidthh is-primary is-outlined mt-2"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer has-background-black-ter has-text-white pt-6 pb-6">
+        <div class="container is-narrow">
+          <div class="level is-mobilee">
+            <div class="level-left">
+              <h1 class="title is-4">
+                <strong class="is-block has-text-white">Got Questions?</strong>
+                <span class="has-text-grey-lighter is-size-6"
+                  >Our support team is here to guide you
+                </span>
+              </h1>
+            </div>
+            <div class="level-right is-hidden-mobilee">
+              <div class="buttons">
+                <a href="./contact.html" class="button is-primary"
+                  >Contact Us</a
+                >
+                <a
+                  href="https://bit.ly/violatravelsandtours"
+                  class="button is-white is-outlined"
+                  >Chat with us</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="columns is-multiline is-mobile mt-6">
+            <div class="column is-12-mobile is-6-tablet is-4-desktop">
+              <h4 class="title is-size-5 has-text-light">
+                ViolaTravelandTours ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+              </h4>
+              <p>+2349035150573<br />info@ViolaTravelandTours.com</p>
+              <p>Port Harcourt, Rivers State</p>
+              <p class="has-text-white is-hidden">
+                Coded with
+                <span class="icon"
+                  ><i class="fas fa-heart has-text-danger"></i
+                ></span>
+                by Patutechz
+              </p>
+            </div>
+            <div
+              class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop"
+            >
+              <h4 class="title is-size-5 has-text-light">Quick Links</h4>
+              <a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="./about.html"
+                >About Us</a
+              >
+              <br /><a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="./services.html"
+                >Services</a
+              >
+              <br /><a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="./tours.html"
+                >Tours</a
+              >
+            </div>
+
+            <div
+              class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop is-hidden"
+            >
+              <h4 class="title is-size-5 has-text-light">Services</h4>
+              <a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="#"
+                >Flight Booking</a
+              >
+              <br /><a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="#"
+                >Make Tour Plan</a
+              >
+              <br /><a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="#"
+                >Hotel Booking</a
+              >
+            </div>
+            <div class="column is-12-mobile is-6-tablet is-3-desktop">
+              <h4 class="title is-size-5 has-text-light">Follow Us</h4>
+              <div class="buttons mt-4">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61552564592814&mibextid=LQQJ4d"
+                  class="button is-light is-outlined"
+                  style="border-radius: 9999px"
+                >
+                  <span class="icon"><i class="fab fa-facebook"></i></span>
+                </a>
+                <a
+                  href="https://www.instagram.com/violatravelandtours"
+                  class="button is-light is-outlined"
+                  style="border-radius: 9999px"
+                >
+                  <span class="icon"><i class="fab fa-instagram"></i></span>
+                </a>
+                <a
+                  href="https://bit.ly/violatravelsandtours"
+                  class="button is-light is-outlined"
+                  style="border-radius: 9999px"
+                >
+                  <span class="icon"><i class="fab fa-whatsapp"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <a href="" class="link-button has-background-primary">
-        <i class="fab fa-whatsapp is-size-3"></i>
-      </a>
+      <i class="fab fa-whatsapp is-size-3"></i>
+    </a>
     <script type="text/javascript" src="lib/alpine.js"></script>
   </body>
 </html>

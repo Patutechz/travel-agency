@@ -1,176 +1,281 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>About | Viola</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontawesome/css/all.css" />
   </head>
   <body x-data="{ openMenu: false, openDropdown: false }">
     <div id="app">
-        <nav class="navbar is-primary is-transparent">
-            <div class="container">
-                <div class="navbar-brand">
-                    <a class="navbar-item is-size-5 has-text-weight-boldd is-uppercasee" href="./index.html">
-                        <img class="is-rounded mr-2" src="img/viola-white.png" alt="violatravelandtours" height="48">
-                        ViolaTravelandTours
-                    </a>
-                    <a @click="openMenu = ! openMenu" class="navbar-burger" role="button"
-                        :class="{ 'is-active': openMenu }">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </a>
-                </div>
+      <nav class="navbar is-primary is-transparent">
+        <div class="container">
+          <div class="navbar-brand">
+            <a
+              class="navbar-item is-size-5 has-text-weight-boldd is-uppercasee"
+              href="./index.html"
+            >
+              <img
+                class="is-rounded mr-2"
+                src="img/viola-white.png"
+                alt="violatravelandtours"
+                height="48"
+              />
+              <!-- ViolaTravelandTours -->
+            </a>
+            <a
+              @click="openMenu = ! openMenu"
+              class="navbar-burger"
+              role="button"
+              :class="{ 'is-active': openMenu }"
+            >
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
 
+          <div
+            class="navbar-menu has-text-centered"
+            :class="{ 'is-active': openMenu }"
+          >
+            <!-- Left Side Of Navbar -->
+            <div class="navbar-start"></div>
 
-                <div class="navbar-menu has-text-centered" :class="{ 'is-active': openMenu }">
-                    <!-- Left Side Of Navbar -->
-                    <div class="navbar-start">
-
-                    </div>
-
-                    <!-- Right Side Of Navbar -->
-                    <div class="navbar-end">
-                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./index.html">Home</a>
-                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./about.html">About</a>
-                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./services.html">Services</a>
-                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./tours.html">Tours</a>
-                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./destinations.html">Destinations</a>
-                        <a class="navbar-item is-size-5 has-text-weight-mediumm" href="./contact.html">Contact</a>
-                    </div>
-                </div>
+            <!-- Right Side Of Navbar -->
+            <div class="navbar-end">
+              <a
+                class="navbar-item is-size-5 has-text-weight-mediumm"
+                href="./index.html"
+                >Home</a
+              >
+              <a
+                class="navbar-item is-size-5 has-text-weight-mediumm"
+                href="./about.html"
+                >About</a
+              >
+              <a
+                class="navbar-item is-size-5 has-text-weight-mediumm"
+                href="./services.html"
+                >Services</a
+              >
+              <a
+                class="navbar-item is-size-5 has-text-weight-mediumm"
+                href="./tours.html"
+                >Tours</a
+              >
+              <a
+                class="navbar-item is-size-5 has-text-weight-mediumm"
+                href="./destinations.html"
+                >Destinations</a
+              >
+              <a
+                class="navbar-item is-size-5 has-text-weight-mediumm"
+                href="./contact.html"
+                >Contact</a
+              >
             </div>
-        </nav>
-
-        <main>
-            <section class="hero has-text-centered is-vcentered is-halfheight is-primary">
-                <div class="hero-body">
-                    <div class="container is-fluid">
-                        <div class="columns is-centered">
-                            <div class="column">
-                                <h1 class="hero-title title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile py-4"
-                                    style="font-weight: 800">
-                                    About Us</h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-<section class="section">
-    <div class="container">
-        <div class="columns is-centeredd is-vcentered is-multiline">
-            <div class="column is-5 is-offset-1">
-                <h1 class="title is-uppercase has-text-weight-bold">About Us</h1>
-                <hr class="my-3 has-background-primary" style="width: 30px !important; height: 8px">
-                <p class="subtitle">Based in the vibrant heart of the Garden City, Port Harcourt, Nigeria, we specialize in
-creating unforgettable travel experiences for new and seasoned explorers. Whether you
-dream of discovering diverse cultures, marveling at breathtaking landscapes, or chasing
-the thrill of adventure, we’ve got you covered.
-At Viola Tours, every journey is more than a trip—it’s a story waiting to be told. So,
-buckle up, adventurer, because you’re in for the ride of a lifetime with us</p>
-            </div>
-            <div class="column is-5 is-offset-1">
-                <div class="image mx-auto">
-                    <img class="is-roundedd" src="./img/about.svg" alt="">
-                </div>
-            </div>
-            <div class="column is-6 mt-4">
-                <h1 class="title is-uppercase has-text-weight-bold">Our Mission</h1>
-                <hr class="my-3 has-background-primary" style="width: 30px !important; height: 8px">
-                <p class="subtitle">At Viola Travel and Tours, we make travel unforgettable. We aim to connect
-                    you with personalized adventures, expert tips, and exclusive deals curated for you and
-                    your loved ones. We’re here to inspire your wanderlust and help you create amazing
-                    memories on every trip. Let’s make your next journey one to remember!
-                    </p>
-            </div>
-            <div class="column is-6 mt-4">
-                <h1 class="title is-uppercase has-text-weight-bold">Our Vision</h1>
-                <hr class="my-3 has-background-primary" style="width: 30px !important; height: 8px">
-                <p class="subtitle">We dream of a world where travel is easy, exciting, and full of unforgettable
-                    moments. Our vision is to help people explore new places, connect with different
-                    cultures, and create memories that last a lifetime—all while making travel seamless and
-                    sustainable</p>
-            </div>
+          </div>
         </div>
-    </div>
-</section>
-        </main>
-        <footer class="footer has-background-black-ter has-text-white pt-6 pb-6">
-            <div class="container is-narrow">
-                <div class="level is-mobilee">
-                    <div class="level-left">
-                        <h1 class="title is-4">
-                            <strong class="is-block has-text-white">Got Questions?</strong>
-                            <span class="has-text-grey-lighter is-size-6">Our support team is here to guide you
-                            </span>
-                        </h1>
-                    </div>
-                    <div class="level-right is-hidden-mobilee">
-                        <div class="buttons">
-                            <a href="./contact.html" class="button is-primary">Contact Us</a>
-                            <a href="https://bit.ly/violatravelsandtours" class="button is-white is-outlined">Chat with
-                                us</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="columns is-multiline is-mobile mt-6">
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <h4 class="title is-size-5 has-text-light">ViolaTravelandTours ©
-                            <script>
-                                document.write(new Date().getFullYear())
-                            </script>
-                        </h4>
-                        <p>+2349035150573<br>info@ViolaTravelandTours.com</p>
-                        <p>Port Harcourt, Rivers State</p>
-                        <p class="has-text-white is-hidden">Coded with <span class="icon"><i
-                                    class="fas fa-heart has-text-danger"></i></span> by Patutechz</p>
-                    </div>
-                    <div class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop">
-                        <h4 class="title is-size-5 has-text-light">Quick Links</h4>
-                        <a class="is-family-sans-serif has-text-weight-medium has-text-white"
-                            href="./about.html">About Us</a>
-                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white"
-                            href="./services.html">Services</a>
-                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white"
-                            href="./tours.html">Tours</a>
-                    </div>
+      </nav>
 
-                    <div class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop is-hidden">
-                        <h4 class="title is-size-5 has-text-light">Services</h4>
-                        <a class="is-family-sans-serif has-text-weight-medium has-text-white" href="#">Flight
-                            Booking</a>
-                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white" href="#">Make
-                            Tour Plan</a>
-                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white" href="#">Hotel
-                            Booking</a>
-                    </div>
-                    <div class="column is-12-mobile is-6-tablet is-3-desktop">
-                        <h4 class="title is-size-5 has-text-light">Follow Us</h4>
-                        <div class="buttons mt-4">
-                            <a href="https://www.facebook.com/profile.php?id=61552564592814&mibextid=LQQJ4d"
-                                class="button is-light is-outlined" style="border-radius : 9999px">
-                                <span class="icon"><i class="fab fa-facebook"></i></span>
-                            </a>
-                            <a href="https://www.instagram.com/violatravelandtours" class="button is-light is-outlined"
-                                style="border-radius : 9999px">
-                                <span class="icon"><i class="fab fa-instagram"></i></span>
-                            </a>
-                            <a href="https://bit.ly/violatravelsandtours" class="button is-light is-outlined"
-                                style="border-radius : 9999px">
-                                <span class="icon"><i class="fab fa-whatsapp"></i></span>
-                            </a>
-                        </div>
-                    </div>
+      <main>
+        <section
+          class="hero has-text-centered is-vcentered is-halfheight is-primary"
+        >
+          <div class="hero-body">
+            <div class="container is-fluid">
+              <div class="columns is-centered">
+                <div class="column">
+                  <h1
+                    class="hero-title title is-spaced is-size-1-desktop is-size-2-tablet is-size-3-mobile py-4"
+                    style="font-weight: 800"
+                  >
+                    About Us
+                  </h1>
                 </div>
+              </div>
             </div>
-        </footer>
+          </div>
+        </section>
+        <section class="section">
+          <div class="container">
+            <div class="columns is-centeredd is-vcentered is-multiline">
+              <div class="column is-5 is-offset-1">
+                <h1 class="title has-text-weight-bold">About Us</h1>
+                <hr
+                  class="my-3 has-background-primary"
+                  style="width: 30px !important; height: 8px"
+                />
+                <p class="subtitle">
+                    Welcome to Viola Travels and Tours, your trusted partner in creating unforgettable travel
+                    experiences.
+                    We specialize in crafting tailored travel solutions, from ticketing and visa assistance to
+                    curated tour packages and hotel bookings. Our dedicated team of experts ensures
+                    every detail is handled, leaving you free to focus on making memories that last a
+                    lifetime.
+                    With a passion for exploration and a commitment to excellence, Viola Travels and Tours
+                    is more than a travel agency—we’re your gateway to the world. Let us help you turn
+                    your travel dreams into reality.
+                    Start your journey with Viola Travels today. The world awaits!
+                </p>
+              </div>
+              <div class="column is-5 is-offset-1">
+                <div class="image mx-auto">
+                  <img class="is-roundedd" src="./img/about.svg" alt="" />
+                </div>
+              </div>
+              <div class="column is-6 mt-4">
+                <h1 class="title has-text-weight-bold">Our Mission</h1>
+                <hr
+                  class="my-3 has-background-primary"
+                  style="width: 30px !important; height: 8px"
+                />
+                <p class="subtitle">
+                  At Viola Travel and Tours, we make travel unforgettable. We
+                  aim to connect you with personalized adventures, expert tips,
+                  and exclusive deals curated for you and your loved ones. We’re
+                  here to inspire your wanderlust and help you create amazing
+                  memories on every trip. Let’s make your next journey one to
+                  remember!
+                </p>
+              </div>
+              <div class="column is-6 mt-4">
+                <h1 class="title has-text-weight-bold">Our Vision</h1>
+                <hr
+                  class="my-3 has-background-primary"
+                  style="width: 30px !important; height: 8px"
+                />
+                <p class="subtitle">
+                  We dream of a world where travel is easy, exciting, and full
+                  of unforgettable moments. Our vision is to help people explore
+                  new places, connect with different cultures, and create
+                  memories that last a lifetime—all while making travel seamless
+                  and sustainable
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer has-background-black-ter has-text-white pt-6 pb-6">
+        <div class="container is-narrow">
+          <div class="level is-mobilee">
+            <div class="level-left">
+              <h1 class="title is-4">
+                <strong class="is-block has-text-white">Got Questions?</strong>
+                <span class="has-text-grey-lighter is-size-6"
+                  >Our support team is here to guide you
+                </span>
+              </h1>
+            </div>
+            <div class="level-right is-hidden-mobilee">
+              <div class="buttons">
+                <a href="./contact.html" class="button is-primary"
+                  >Contact Us</a
+                >
+                <a
+                  href="https://bit.ly/violatravelsandtours"
+                  class="button is-white is-outlined"
+                  >Chat with us</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="columns is-multiline is-mobile mt-6">
+            <div class="column is-12-mobile is-6-tablet is-4-desktop">
+              <h4 class="title is-size-5 has-text-light">
+                ViolaTravelandTours ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+              </h4>
+              <p>+2349035150573<br />info@ViolaTravelandTours.com</p>
+              <p>Port Harcourt, Rivers State</p>
+              <p class="has-text-white is-hidden">
+                Coded with
+                <span class="icon"
+                  ><i class="fas fa-heart has-text-danger"></i
+                ></span>
+                by Patutechz
+              </p>
+            </div>
+            <div
+              class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop"
+            >
+              <h4 class="title is-size-5 has-text-light">Quick Links</h4>
+              <a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="./about.html"
+                >About Us</a
+              >
+              <br /><a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="./services.html"
+                >Services</a
+              >
+              <br /><a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="./tours.html"
+                >Tours</a
+              >
+            </div>
+
+            <div
+              class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop is-hidden"
+            >
+              <h4 class="title is-size-5 has-text-light">Services</h4>
+              <a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="#"
+                >Flight Booking</a
+              >
+              <br /><a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="#"
+                >Make Tour Plan</a
+              >
+              <br /><a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="#"
+                >Hotel Booking</a
+              >
+            </div>
+            <div class="column is-12-mobile is-6-tablet is-3-desktop">
+              <h4 class="title is-size-5 has-text-light">Follow Us</h4>
+              <div class="buttons mt-4">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61552564592814&mibextid=LQQJ4d"
+                  class="button is-light is-outlined"
+                  style="border-radius: 9999px"
+                >
+                  <span class="icon"><i class="fab fa-facebook"></i></span>
+                </a>
+                <a
+                  href="https://www.instagram.com/violatravelandtours"
+                  class="button is-light is-outlined"
+                  style="border-radius: 9999px"
+                >
+                  <span class="icon"><i class="fab fa-instagram"></i></span>
+                </a>
+                <a
+                  href="https://bit.ly/violatravelsandtours"
+                  class="button is-light is-outlined"
+                  style="border-radius: 9999px"
+                >
+                  <span class="icon"><i class="fab fa-whatsapp"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <a href="" class="link-button has-background-primary">
-        <i class="fab fa-whatsapp is-size-3"></i>
-      </a>
+      <i class="fab fa-whatsapp is-size-3"></i>
+    </a>
     <script type="text/javascript" src="lib/alpine.js"></script>
   </body>
 </html>

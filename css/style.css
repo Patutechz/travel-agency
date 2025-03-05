@@ -10342,3 +10342,22 @@ body {
   transform: scale(1.1);
   background: #734c9b;
 }
+
+@font-face { 
+  font-family: 'MyFont'; 
+  src: url('./fonts/Actay-Regular.otf') format('opentype'); 
+  font-weight: normal; 
+  font-style: normal; 
+} 
+
+@font-face { 
+  font-family: 'MyFont'; 
+  src: url('./fonts/ActayWide-Bold.otf') format('opentype'); 
+  font-weight: bold; 
+  font-style: bold; 
+} 
+  
+* { 
+  font-family: 'MyFont'; 
+  /* text-align: center;  */
+} 

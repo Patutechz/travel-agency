@@ -22,10 +22,18 @@
       >
         <div class="container">
           <div class="navbar-brand">
-                    <a class="navbar-item is-size-5 has-text-weight-boldd is-uppercasee" href="./index.html">
-                        <img class="is-rounded mr-2" src="img/viola-white.png" alt="violatravelandtours" height="48">
-                        ViolaTravelandTours
-                    </a>
+            <a
+              class="navbar-item is-size-5 has-text-weight-boldd is-uppercasee"
+              href="./index.html"
+            >
+              <img
+                class="is-rounded mr-2"
+                src="img/viola-white.png"
+                alt="violatravelandtours"
+                height="48"
+              />
+              <!-- ViolaTravelandTours -->
+            </a>
             <a
               @click="openMenu = ! openMenu"
               class="navbar-burger"
@@ -79,12 +87,23 @@
               >
               <div
                 class="navbar-item is-size-5 has-text-weight-mediumm is-hidden"
-                >
-                            <a  href="https://www.facebook.com/profile.php?id=61552564592814&mibextid=LQQJ4d" class="icon has-text-white"><i class="fab fa-facebook"></i></a>
-                            <a href="https://bit.ly/violatravelsandtours" class="icon mx-2 has-text-white"><i class="fab fa-whatsapp"></i></a>
-                            <a href="https://www.instagram.com/violatravelandtours" class="icon has-text-white"><i class="fab fa-instagram"></i></a>
-                </div
               >
+                <a
+                  href="https://www.facebook.com/profile.php?id=61552564592814&mibextid=LQQJ4d"
+                  class="icon has-text-white"
+                  ><i class="fab fa-facebook"></i
+                ></a>
+                <a
+                  href="https://bit.ly/violatravelsandtours"
+                  class="icon mx-2 has-text-white"
+                  ><i class="fab fa-whatsapp"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/violatravelandtours"
+                  class="icon has-text-white"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </div>
             </div>
           </div>
         </div>
@@ -101,7 +120,7 @@
               background-position: center;
               background-size: cover;
               background-attachment: fixed;
-              background-image: url(img/beach-801875_1920.jpg);
+              background-image: url(img/plane.jpg);
             "
           >
             <span
@@ -141,16 +160,14 @@
           </div>
         </section>
 
-        <section
-          class="section is-medium has-background-white"
-          id="service"
-        >
+        <section class="section is-medium has-background-white" id="service">
           <div class="container" style="max-width: 960px">
             <h1
               class="title is-space is-size-3-desktop is-size-4-mobile has-text-centered"
               style="font-weight: 800"
             >
-              Let's turn your <span class="has-text-primary">Someday</span> to <span class="has-text-primary">Departure Day</span>
+              Let's turn your <span class="has-text-primary">Someday</span> to
+              <span class="has-text-primary">Departure Day</span>
             </h1>
             <h2
               class="subtitle is-size-4-desktop mx-auto has-text-centered mb-6"
@@ -158,56 +175,81 @@
               We plan the best travel adventures for you with ease
             </h2>
             <div class="columns has-text-centeredd is-multiline level">
-                <div class="column is-12-touch is-half-desktop is-3-widescreen level-item">
-                    <div class="box px-4 has-background-primary">
-                        <span class="icon is-large has-background-primary-light mb-2" style="border-radius: 50%">
-                            <i class="fas fa-globe fa-lg has-text-primary"></i>
-                        </span>
-                        <h1 class="title is-size-4 mb-2 has-text-white">Visa Processing</h1>
-                        <p class="has-text-white">We handle your visa processing hassle so you can focus on
-                            packing for your next adventure.</p>
-                    </div>
+              <div
+                class="column is-12-touch is-half-desktop is-3-widescreen level-item"
+              >
+                <div class="box px-4 has-background-primary">
+                  <span
+                    class="icon is-large has-background-primary-light mb-2"
+                    style="border-radius: 50%"
+                  >
+                    <i class="fas fa-globe fa-lg has-text-primary"></i>
+                  </span>
+                  <h1 class="title is-size-4 mb-2 has-text-white">
+                    Visa Processing
+                  </h1>
+                  <p class="has-text-white">
+                    We handle your visa processing hassle so you can focus on
+                    packing for your next adventure.
+                  </p>
                 </div>
-                <div class="column is-12-touch is-half-desktop is-3-widescreen level-item">
-                    <div class="box px-4">
-                        <span class="icon is-large has-background-primary-light mb-2" style="border-radius: 50%">
-                            <i class="fas fa-globe fa-lg has-text-primary"></i>
-                        </span>
-                        <h1 class="title is-size-4 mb-2">Hotel Booking</h1>
-                        <p> Your trip deserves the perfect stay. We’ll book it, you just show
-                            up.
-                            </p>
-                    </div>
+              </div>
+              <div
+                class="column is-12-touch is-half-desktop is-3-widescreen level-item"
+              >
+                <div class="box px-4">
+                  <span
+                    class="icon is-large has-background-primary-light mb-2"
+                    style="border-radius: 50%"
+                  >
+                    <i class="fas fa-globe fa-lg has-text-primary"></i>
+                  </span>
+                  <h1 class="title is-size-4 mb-2">Hotel Booking</h1>
+                  <p>
+                    Your trip deserves the perfect stay. We’ll book it, you just
+                    show up.
+                  </p>
                 </div>
-                <div class="column is-12-touch is-half-desktop is-3-widescreen level-item">
-                    <div class="box px-4">
-                        <span class="icon is-large has-background-primary-light mb-2" style="border-radius: 50%">
-                            <i class="fas fa-globe fa-lg has-text-primary"></i>
-                        </span>
-                        <h1 class="title is-size-4 mb-2">Ticket Booking</h1>
-                        <p> Flights? We’ve got it sorted. Just pack your bags and dream to
-                            take off.</p>
-                    </div>
+              </div>
+              <div
+                class="column is-12-touch is-half-desktop is-3-widescreen level-item"
+              >
+                <div class="box px-4">
+                  <span
+                    class="icon is-large has-background-primary-light mb-2"
+                    style="border-radius: 50%"
+                  >
+                    <i class="fas fa-globe fa-lg has-text-primary"></i>
+                  </span>
+                  <h1 class="title is-size-4 mb-2">Ticket Booking</h1>
+                  <p>
+                    Flights? We’ve got it sorted. Just pack your bags and dream
+                    to take off.
+                  </p>
                 </div>
-                <div class="column is-12-touch is-half-desktop is-3-widescreen level-item">
-                    <div class="box px-4">
-                        <span class="icon is-large has-background-primary-light mb-2" style="border-radius: 50%">
-                            <i class="fas fa-globe fa-lg has-text-primary"></i>
-                        </span>
-                        <h1 class="title is-size-4 mb-2">Tour Plans</h1>
-                        <p>You don’t have to make the plans. We’ll plan the tours; while you
-                            make the memories</p>
-                    </div>
+              </div>
+              <div
+                class="column is-12-touch is-half-desktop is-3-widescreen level-item"
+              >
+                <div class="box px-4">
+                  <span
+                    class="icon is-large has-background-primary-light mb-2"
+                    style="border-radius: 50%"
+                  >
+                    <i class="fas fa-globe fa-lg has-text-primary"></i>
+                  </span>
+                  <h1 class="title is-size-4 mb-2">Tour Plans</h1>
+                  <p>
+                    You don’t have to make the plans. We’ll plan the tours;
+                    while you make the memories
+                  </p>
                 </div>
+              </div>
             </div>
             <div class="columns is-vcentered mt-6">
               <div class="column is-6">
                 <div class="image is-4by3 mx-auto">
-                  <img
-                    class="is-roundedd"
-                    src="img/about.svg"
-                    alt=""
-                  />
+                  <img class="is-roundedd" src="img/about.svg" alt="" />
                 </div>
               </div>
               <div class="column is-5 is-offset-1">
@@ -219,12 +261,17 @@
                   Your Passport to Seamless Trips
                 </h3>
                 <p class="subtitlee is-size-55 mb-6">
-Based in the vibrant heart of the Garden City, Port Harcourt, Nigeria, we specialize in
-                        creating unforgettable travel experiences for new and seasoned explorers. Whether you
-                        dream of discovering diverse cultures, marveling at breathtaking landscapes, or chasing
-                        the thrill of adventure, we’ve got you covered.
-                        At Viola Tours, every journey is more than a trip—it’s a story waiting to be told. So,
-                        buckle up, adventurer, because you’re in for the ride of a lifetime with us.
+                  Welcome to Viola Travels and Tours, your trusted partner in
+                  creating unforgettable travel experiences. We specialize in
+                  crafting tailored travel solutions, from ticketing and visa
+                  assistance to curated tour packages and hotel bookings. Our
+                  dedicated team of experts ensures every detail is handled,
+                  leaving you free to focus on making memories that last a
+                  lifetime. With a passion for exploration and a commitment to
+                  excellence, Viola Travels and Tours is more than a travel
+                  agency—we’re your gateway to the world. Let us help you turn
+                  your travel dreams into reality. Start your journey with Viola
+                  Travels today. The world awaits!
                 </p>
                 <div class="buttons">
                   <button class="button is-primary is-outlinedd">
@@ -240,8 +287,15 @@ Based in the vibrant heart of the Garden City, Port Harcourt, Nigeria, we specia
           <div class="container" style="max-width: 960px">
             <div class="columns">
               <div class="column is-5">
-                    <p class="has-text-weight-bold mb-2 is-uppercase">Popular Destinations</p>
-                    <h3 class="title is-size-4 has-text-primary" style="font-weight: 800;">See where travelers love to visit</h3>
+                <p class="has-text-weight-bold mb-2 is-uppercase">
+                  Popular Destinations
+                </p>
+                <h3
+                  class="title is-size-4 has-text-primary"
+                  style="font-weight: 800"
+                >
+                  See where travelers love to visit
+                </h3>
               </div>
             </div>
             <div
@@ -257,7 +311,12 @@ Based in the vibrant heart of the Garden City, Port Harcourt, Nigeria, we specia
                     </figure>
                   </div>
                   <div class="card-content">
-                    <h1 class="title is-size-5 mb-2">South Africa</h1>
+                    <h1 class="title is-size-5 mb-2">Qatar</h1>
+                    <p>
+                      Discover the modern marvels of Doha, shop in dazzling
+                      souks, and revel in the desert's serene beauty. A blend of
+                      tradition and luxury.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -271,7 +330,11 @@ Based in the vibrant heart of the Garden City, Port Harcourt, Nigeria, we specia
                     </figure>
                   </div>
                   <div class="card-content">
-                    <h1 class="title is-size-5 mb-2">Vietnam</h1>
+                    <h1 class="title is-size-5 mb-2">Egypt</h1>
+                    <p>
+                      Witness the timeless pyramids of Giza, sail the Nile like royalty, and explore
+                      bustling markets. A journey into ancient wonders awaits
+                    </p>
                   </div>
                 </div>
               </div>
@@ -286,6 +349,11 @@ Based in the vibrant heart of the Garden City, Port Harcourt, Nigeria, we specia
                   </div>
                   <div class="card-content">
                     <h1 class="title is-size-5 mb-2">Kenya</h1>
+                    <p>
+                      Immerse yourself in the ultimate safari adventure, witness the Great
+                      Migration, and relax on the pristine beaches of Diani. Nature in its wildest form!
+                      
+                    </p>
                   </div>
                 </div>
               </div>
@@ -565,123 +633,187 @@ Based in the vibrant heart of the Garden City, Port Harcourt, Nigeria, we specia
               </div>
             </div>
             <div class="columns is-multiline level has-text-left is-centered">
-                <div class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/beach-801875_1920.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h1 class="title is-size-5 has-text-primary is-italic">France</h1>
-                            <hr class="my-3 has-background-grey-lighter" style="width: 30px !important">
-                            <h1 class="title is-size-5" style="font-weight: 800">Tower of france</h1>
-                            <p class="has-text-weight-semibold">NGN 1,000,000</p>
-                            <p class="mb-3 subtitle has-text-weight-normal is-size-6">Short description about tower of france</p>
-                            <a href="./tours-details.html"
-                                class="button is-fullwidthh is-primary">View Details</a>
-                        </div>
-                    </div>
+              <div
+                class="column is-12-touch is-half-desktop is-one-third-widescreen level-item is-narrow"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 has-text-primary is-italic">
+                      France
+                    </h1>
+                    <hr
+                      class="my-3 has-background-grey-lighter"
+                      style="width: 30px !important"
+                    />
+                    <h1 class="title is-size-5" style="font-weight: 800">
+                      Tower of france
+                    </h1>
+                    <p class="has-text-weight-semibold">NGN 1,000,000</p>
+                    <p class="mb-3 subtitle has-text-weight-normal is-size-6">
+                      Short description about tower of france
+                    </p>
+                    <a
+                      href="./tours-details.html"
+                      class="button is-fullwidthh is-primary"
+                      >View Details</a
+                    >
+                  </div>
                 </div>
-              <div
-                class="column is-12-touch is-half-desktop is-one-third-widescreen level-item"
-              >
-                 <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/beach-801875_1920.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h1 class="title is-size-5 has-text-primary is-italic">France</h1>
-                            <hr class="my-3 has-background-grey-lighter" style="width: 30px !important">
-                            <h1 class="title is-size-5" style="font-weight: 800">Tower of france</h1>
-                            <p class="has-text-weight-semibold">NGN 1,000,000</p>
-                            <p class="mb-3">Short description about tower of france</p>
-                            <a href="./tours-details.html"
-                                class="button is-fullwidthh is-primary">View Details</a>
-                        </div>
-                    </div>
               </div>
               <div
                 class="column is-12-touch is-half-desktop is-one-third-widescreen level-item"
               >
-                 <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/beach-801875_1920.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h1 class="title is-size-5 has-text-primary is-italic">France</h1>
-                            <hr class="my-3 has-background-grey-lighter" style="width: 30px !important">
-                            <h1 class="title is-size-5" style="font-weight: 800">Tower of france</h1>
-                            <p class="has-text-weight-semibold">NGN 1,000,000</p>
-                            <p class="mb-3">Short description about tower of france</p>
-                            <a href="./tours-details.html"
-                                class="button is-fullwidthh is-primary">View Details</a>
-                        </div>
-                    </div>
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 has-text-primary is-italic">
+                      France
+                    </h1>
+                    <hr
+                      class="my-3 has-background-grey-lighter"
+                      style="width: 30px !important"
+                    />
+                    <h1 class="title is-size-5" style="font-weight: 800">
+                      Tower of france
+                    </h1>
+                    <p class="has-text-weight-semibold">NGN 1,000,000</p>
+                    <p class="mb-3">Short description about tower of france</p>
+                    <a
+                      href="./tours-details.html"
+                      class="button is-fullwidthh is-primary"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
               </div>
               <div
                 class="column is-12-touch is-half-desktop is-one-third-widescreen level-item"
               >
-                 <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/beach-801875_1920.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h1 class="title is-size-5 has-text-primary is-italic">France</h1>
-                            <hr class="my-3 has-background-grey-lighter" style="width: 30px !important">
-                            <h1 class="title is-size-5" style="font-weight: 800">Tower of france</h1>
-                            <p class="has-text-weight-semibold">NGN 1,000,000</p>
-                            <p class="mb-3">Short description about tower of france</p>
-                            <a href="./tours-details.html"
-                                class="button is-fullwidthh is-primary">View Details</a>
-                        </div>
-                    </div>
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 has-text-primary is-italic">
+                      France
+                    </h1>
+                    <hr
+                      class="my-3 has-background-grey-lighter"
+                      style="width: 30px !important"
+                    />
+                    <h1 class="title is-size-5" style="font-weight: 800">
+                      Tower of france
+                    </h1>
+                    <p class="has-text-weight-semibold">NGN 1,000,000</p>
+                    <p class="mb-3">Short description about tower of france</p>
+                    <a
+                      href="./tours-details.html"
+                      class="button is-fullwidthh is-primary"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
               </div>
               <div
                 class="column is-12-touch is-half-desktop is-one-third-widescreen level-item"
               >
-                 <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/beach-801875_1920.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h1 class="title is-size-5 has-text-primary is-italic">France</h1>
-                            <hr class="my-3 has-background-grey-lighter" style="width: 30px !important">
-                            <h1 class="title is-size-5" style="font-weight: 800">Tower of france</h1>
-                            <p class="has-text-weight-semibold">NGN 1,000,000</p>
-                            <p class="mb-3">Short description about tower of france</p>
-                            <a href="./tours-details.html"
-                                class="button is-fullwidthh is-primary">View Details</a>
-                        </div>
-                    </div>
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 has-text-primary is-italic">
+                      France
+                    </h1>
+                    <hr
+                      class="my-3 has-background-grey-lighter"
+                      style="width: 30px !important"
+                    />
+                    <h1 class="title is-size-5" style="font-weight: 800">
+                      Tower of france
+                    </h1>
+                    <p class="has-text-weight-semibold">NGN 1,000,000</p>
+                    <p class="mb-3">Short description about tower of france</p>
+                    <a
+                      href="./tours-details.html"
+                      class="button is-fullwidthh is-primary"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
               </div>
               <div
                 class="column is-12-touch is-half-desktop is-one-third-widescreen level-item"
               >
-                 <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-4by3">
-                                <img src="img/beach-801875_1920.jpg" alt="">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <h1 class="title is-size-5 has-text-primary is-italic">France</h1>
-                            <hr class="my-3 has-background-grey-lighter" style="width: 30px !important">
-                            <h1 class="title is-size-5" style="font-weight: 800">Tower of france</h1>
-                            <p class="has-text-weight-semibold">NGN 1,000,000</p>
-                            <p class="mb-3">Short description about tower of france</p>
-                            <a href="./tours-details.html"
-                                class="button is-fullwidthh is-primary">View Details</a>
-                        </div>
-                    </div>
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 has-text-primary is-italic">
+                      France
+                    </h1>
+                    <hr
+                      class="my-3 has-background-grey-lighter"
+                      style="width: 30px !important"
+                    />
+                    <h1 class="title is-size-5" style="font-weight: 800">
+                      Tower of france
+                    </h1>
+                    <p class="has-text-weight-semibold">NGN 1,000,000</p>
+                    <p class="mb-3">Short description about tower of france</p>
+                    <a
+                      href="./tours-details.html"
+                      class="button is-fullwidthh is-primary"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="column is-12-touch is-half-desktop is-one-third-widescreen level-item"
+              >
+                <div class="card">
+                  <div class="card-image">
+                    <figure class="image is-4by3">
+                      <img src="img/beach-801875_1920.jpg" alt="" />
+                    </figure>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="title is-size-5 has-text-primary is-italic">
+                      France
+                    </h1>
+                    <hr
+                      class="my-3 has-background-grey-lighter"
+                      style="width: 30px !important"
+                    />
+                    <h1 class="title is-size-5" style="font-weight: 800">
+                      Tower of france
+                    </h1>
+                    <p class="has-text-weight-semibold">NGN 1,000,000</p>
+                    <p class="mb-3">Short description about tower of france</p>
+                    <a
+                      href="./tours-details.html"
+                      class="button is-fullwidthh is-primary"
+                      >View Details</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
             <div class="columns is-centered has-text-centered mt-6">
@@ -698,75 +830,118 @@ Based in the vibrant heart of the Garden City, Port Harcourt, Nigeria, we specia
           </div>
         </section>
       </main>
-        <footer class="footer has-background-black-ter has-text-white pt-6 pb-6">
-            <div class="container is-narrow">
-                <div class="level is-mobilee">
-                    <div class="level-left">
-                        <h1 class="title is-4">
-                            <strong class="is-block has-text-white">Got Questions?</strong>
-                            <span class="has-text-grey-lighter is-size-6">Our support team is here to guide you
-                            </span>
-                        </h1>
-                    </div>
-                    <div class="level-right is-hidden-mobilee">
-                        <div class="buttons">
-                            <a href="./contact.html" class="button is-primary">Contact Us</a>
-                            <a href="https://bit.ly/violatravelsandtours" class="button is-white is-outlined">Chat with
-                                us</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="columns is-multiline is-mobile mt-6">
-                    <div class="column is-12-mobile is-6-tablet is-4-desktop">
-                        <h4 class="title is-size-5 has-text-light">ViolaTravelandTours ©
-                            <script>
-                                document.write(new Date().getFullYear())
-                            </script>
-                        </h4>
-                        <p>+2349035150573<br>info@ViolaTravelandTours.com</p>
-                        <p>Port Harcourt, Rivers State</p>
-                        <p class="has-text-white is-hidden">Coded with <span class="icon"><i
-                                    class="fas fa-heart has-text-danger"></i></span> by Patutechz</p>
-                    </div>
-                    <div class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop">
-                        <h4 class="title is-size-5 has-text-light">Quick Links</h4>
-                        <a class="is-family-sans-serif has-text-weight-medium has-text-white"
-                            href="./about.html">About Us</a>
-                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white"
-                            href="./services.html">Services</a>
-                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white"
-                            href="./tours.html">Tours</a>
-                    </div>
-
-                    <div class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop is-hidden">
-                        <h4 class="title is-size-5 has-text-light">Services</h4>
-                        <a class="is-family-sans-serif has-text-weight-medium has-text-white" href="#">Flight
-                            Booking</a>
-                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white" href="#">Make
-                            Tour Plan</a>
-                        <br><a class="is-family-sans-serif has-text-weight-medium has-text-white" href="#">Hotel
-                            Booking</a>
-                    </div>
-                    <div class="column is-12-mobile is-6-tablet is-3-desktop">
-                        <h4 class="title is-size-5 has-text-light">Follow Us</h4>
-                        <div class="buttons mt-4">
-                            <a href="https://www.facebook.com/profile.php?id=61552564592814&mibextid=LQQJ4d"
-                                class="button is-light is-outlined" style="border-radius : 9999px">
-                                <span class="icon"><i class="fab fa-facebook"></i></span>
-                            </a>
-                            <a href="https://www.instagram.com/violatravelandtours" class="button is-light is-outlined"
-                                style="border-radius : 9999px">
-                                <span class="icon"><i class="fab fa-instagram"></i></span>
-                            </a>
-                            <a href="https://bit.ly/violatravelsandtours" class="button is-light is-outlined"
-                                style="border-radius : 9999px">
-                                <span class="icon"><i class="fab fa-whatsapp"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+      <footer class="footer has-background-black-ter has-text-white pt-6 pb-6">
+        <div class="container is-narrow">
+          <div class="level is-mobilee">
+            <div class="level-left">
+              <h1 class="title is-4">
+                <strong class="is-block has-text-white">Got Questions?</strong>
+                <span class="has-text-grey-lighter is-size-6"
+                  >Our support team is here to guide you
+                </span>
+              </h1>
             </div>
-        </footer>
+            <div class="level-right is-hidden-mobilee">
+              <div class="buttons">
+                <a href="./contact.html" class="button is-primary"
+                  >Contact Us</a
+                >
+                <a
+                  href="https://bit.ly/violatravelsandtours"
+                  class="button is-white is-outlined"
+                  >Chat with us</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="columns is-multiline is-mobile mt-6">
+            <div class="column is-12-mobile is-6-tablet is-4-desktop">
+              <h4 class="title is-size-5 has-text-light">
+                ViolaTravelandTours ©
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+              </h4>
+              <p>+2349035150573<br />info@ViolaTravelandTours.com</p>
+              <p>Port Harcourt, Rivers State</p>
+              <p class="has-text-white is-hidden">
+                Coded with
+                <span class="icon"
+                  ><i class="fas fa-heart has-text-danger"></i
+                ></span>
+                by Patutechz
+              </p>
+            </div>
+            <div
+              class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop"
+            >
+              <h4 class="title is-size-5 has-text-light">Quick Links</h4>
+              <a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="./about.html"
+                >About Us</a
+              >
+              <br /><a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="./services.html"
+                >Services</a
+              >
+              <br /><a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="./tours.html"
+                >Tours</a
+              >
+            </div>
+
+            <div
+              class="column is-12-mobile is-6-tablet is-2-desktop is-offset--desktop is-hidden"
+            >
+              <h4 class="title is-size-5 has-text-light">Services</h4>
+              <a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="#"
+                >Flight Booking</a
+              >
+              <br /><a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="#"
+                >Make Tour Plan</a
+              >
+              <br /><a
+                class="is-family-sans-serif has-text-weight-medium has-text-white"
+                href="#"
+                >Hotel Booking</a
+              >
+            </div>
+            <div class="column is-12-mobile is-6-tablet is-3-desktop">
+              <h4 class="title is-size-5 has-text-light">Follow Us</h4>
+              <div class="buttons mt-4">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61552564592814&mibextid=LQQJ4d"
+                  class="button is-light is-outlined"
+                  style="border-radius: 9999px"
+                >
+                  <span class="icon"><i class="fab fa-facebook"></i></span>
+                </a>
+                <a
+                  href="https://www.instagram.com/violatravelandtours"
+                  class="button is-light is-outlined"
+                  style="border-radius: 9999px"
+                >
+                  <span class="icon"><i class="fab fa-instagram"></i></span>
+                </a>
+                <a
+                  href="https://bit.ly/violatravelsandtours"
+                  class="button is-light is-outlined"
+                  style="border-radius: 9999px"
+                >
+                  <span class="icon"><i class="fab fa-whatsapp"></i></span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <a href="" class="link-button has-background-primary">
       <i class="fab fa-whatsapp is-size-3"></i>
